@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b13">
+<meta name="description" content="Portfolio of Yogananda Sai Koduru — MSc Artificial Intelligence Systems student, developer and aspiring AI professional.">
+<title>Yogananda Sai Koduru | AI & Software Portfolio</title>
+<style>
+:root{--bg:#080b13;--surface:#101625;--surface2:#141d2d;--line:#263248;--text:#f4f6fb;--muted:#a4afc2;--purple:#a99aff;--cyan:#72e0e8;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 82% 0%,#2b2052 0,transparent 32%),radial-gradient(ellipse at 0% 48%,#102b39 0,transparent 25%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+header{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff13}.brand{font-weight:850;letter-spacing:-.05em;font-size:19px}.brand b{color:var(--purple)}nav{display:flex;gap:26px;color:var(--muted);font-size:13px}nav a:hover,.social a:hover{color:white}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 18px;background:linear-gradient(110deg,var(--purple),#77cde9);color:#0a0c16;font-size:13px;font-weight:800;transition:.2s}.button:hover{transform:translateY(-2px);filter:brightness(1.08)}.button.outline{background:transparent;border:1px solid var(--line);color:var(--text)}
+.hero{min-height:650px;padding:90px 0 80px;display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:center}.eyebrow,.kicker{color:var(--cyan);text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:850}.hero h1{font-size:clamp(44px,7vw,82px);line-height:1.01;letter-spacing:-.07em;margin:18px 0}.hero h1 span{display:block;background:linear-gradient(100deg,#c1b5ff 10%,#73dce7 90%);color:transparent;background-clip:text}.lead{max-width:650px;color:var(--muted);font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.social{display:flex;gap:20px;margin-top:25px;color:var(--muted);font-size:13px}.visual{max-width:350px;width:100%;aspect-ratio:4/5;margin:auto;position:relative;overflow:hidden;border:1px solid #ffffff24;border-radius:28px;background:linear-gradient(145deg,#28234a,#121a2b 58%,#12303a);display:grid;place-items:center;box-shadow:0 35px 100px #0008}.visual:before,.visual:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #ffffff20;border-radius:50%}.visual:after{width:390px;height:390px}.monogram{z-index:1;width:155px;height:155px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#c0b5ff,#69dce5);color:#101321;font-size:47px;font-weight:900;box-shadow:0 0 80px #a99aff66}.visual-label{position:absolute;bottom:18px;left:18px;right:18px;z-index:2;background:#0a0e19d9;border:1px solid #ffffff20;border-radius:15px;padding:14px 16px;backdrop-filter:blur(12px);font-size:12px;color:var(--muted)}.visual-label strong{display:block;color:white;font-size:14px}
+section{padding:70px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:26px}.section-head h2{font-size:clamp(29px,4vw,43px);letter-spacing:-.055em;line-height:1.1;margin:8px 0 0}.muted{color:var(--muted)}.card{background:linear-gradient(145deg,#151d2d,#0f1521);border:1px solid var(--line);border-radius:20px;padding:25px}.card p{color:var(--muted)}.about{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.about .card p:first-child{margin-top:0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat{border:1px solid #ffffff12;background:#ffffff06;border-radius:14px;padding:17px}.stat strong{font-size:22px;display:block;letter-spacing:-.04em}.stat span{font-size:11px;color:var(--muted)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.skill-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:#a99aff20;color:var(--purple);font-weight:900;margin-bottom:15px}.skill h3,.project h3,.role h3{font-size:17px;margin:0 0 7px}.skill p,.project p{font-size:13px;margin:0;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.tag{font-size:11px;color:#d4d9e7;border:1px solid #39445b;background:#ffffff06;border-radius:999px;padding:5px 10px}.project{padding:0;overflow:hidden}.project-art{height:160px;display:grid;place-items:center;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#ffffffb8;background:radial-gradient(circle at 70% 35%,#9d8cff88,transparent 27%),linear-gradient(135deg,#252044,#142b3a)}.project:nth-child(2) .project-art{background:radial-gradient(circle at 35% 40%,#65dce388,transparent 27%),linear-gradient(135deg,#142c38,#252044)}.project:nth-child(3) .project-art{background:radial-gradient(circle at 60% 35%,#d38bcf77,transparent 28%),linear-gradient(135deg,#30213c,#151e31)}.project-body{padding:21px}.project-link{display:inline-block;margin-top:14px;font-size:12px;color:var(--cyan)}.timeline{border-left:1px solid #514978;margin-left:8px;padding-left:25px;display:grid;gap:24px}.role{position:relative}.role:before{content:"";position:absolute;left:-31px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--purple);box-shadow:0 0 0 5px #a99aff20}.role small{font-size:11px;color:var(--cyan);font-weight:800;letter-spacing:.06em}.role p{margin:5px 0 0;color:var(--muted);font-size:13px}.education{display:grid;grid-template-columns:1fr 1fr;gap:15px}.edu-date{font-size:11px;color:var(--cyan);font-weight:800}.contact{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:34px;border-radius:23px;border:1px solid #ffffff20;background:linear-gradient(110deg,#252044,#102a35)}.contact h2{font-size:clamp(28px,4vw,41px);letter-spacing:-.05em;line-height:1.12;margin:8px 0}.contact p{color:var(--muted);margin:0}.footer{border-top:1px solid #ffffff14;margin-top:60px;padding:28px 0 40px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}
+@media(max-width:780px){nav{display:none}.hero{grid-template-columns:1fr;text-align:center;padding:65px 0;gap:35px}.lead{margin:auto}.actions,.social{justify-content:center}.visual{max-width:270px}.about,.education{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.section-head{display:block}.contact{display:block}.contact .button{margin-top:20px}.footer{display:block}.footer span{display:block;margin-top:8px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#home">YSK<b>.</b></a>
+  <nav aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a></nav>
+  <a class="button" href="#contact">Contact me ↗</a>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow">MSc Artificial Intelligence Systems · University of East London</div>
+    <h1>Yogananda Sai<br><span>Koduru.</span></h1>
+    <p class="lead">Master’s student and aspiring AI professional with a computer science background, interested in machine learning, intelligent systems and building technology with meaningful real-world impact.</p>
+    <div class="actions"><a class="button" href="#projects">Explore my work ↓</a><a class="button outline" href="mailto:kodurusai32@gmail.com">Email me ↗</a></div>
+    <div class="social"><a href="https://www.linkedin.com/in/saikoduru64/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/kodurusai32" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:kodurusai32@gmail.com">kodurusai32@gmail.com</a></div>
+  </div>
+  <div class="visual" aria-label="Initials YSK profile artwork"><div class="monogram">YSK</div><div class="visual-label"><strong>AI · Machine Learning · Software</strong>Learning, researching and building intelligent solutions.</div></div>
+</section>
+
+<section class="wrap" id="about">
+  <div class="section-head"><div><div class="kicker">01 / About me</div><h2>Technology with purpose.</h2></div></div>
+  <div class="about">
+    <article class="card"><p>I am pursuing an MSc in Artificial Intelligence Systems with Industrial Placement at the University of East London. My academic and practical interests include data-driven problem solving, machine learning, intelligent systems and software development.</p><p>My project work includes Smart MediMate, a machine-learning-powered medication reminder concept integrating IoT notifications and a Telegram bot, as well as a blockchain-based crowdfunding platform. I am motivated by the potential for AI—particularly in healthcare—to support useful, human-centred solutions.</p></article>
+    <div class="card stats"><div class="stat"><strong>2025–27</strong><span>MSc Artificial Intelligence Systems</span></div><div class="stat"><strong>7.96</strong><span>Bachelor's CGPA · Distinction</span></div><div class="stat"><strong>2+</strong><span>Research areas explored</span></div><div class="stat"><strong>Full stack</strong><span>Web development experience</span></div></div>
+  </div>
+</section>
+
+<section class="wrap" id="skills">
+  <div class="section-head"><div><div class="kicker">02 / Technical toolkit</div><h2>Skills & technologies</h2></div><p class="muted">Tools and technologies listed in my CV.</p></div>
+  <div class="grid3">
+    <article class="card skill"><div class="skill-icon">⌘</div><h3>Programming</h3><p>Languages used across coursework and development.</p><div class="tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">Kotlin</span><span class="tag">Swift</span><span class="tag">R</span></div></article>
+    <article class="card skill"><div class="skill-icon">✳</div><h3>AI & frameworks</h3><p>Machine learning, application and frontend frameworks.</p><div class="tags"><span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">Scikit-learn</span><span class="tag">React</span><span class="tag">Angular</span><span class="tag">Flutter</span></div></article>
+    <article class="card skill"><div class="skill-icon">◇</div><h3>Platforms & tools</h3><p>Development environments, cloud, databases and collaboration.</p><div class="tags"><span class="tag">AWS</span><span class="tag">Microsoft Azure</span><span class="tag">SQL</span><span class="tag">MongoDB</span><span class="tag">Git</span><span class="tag">GitHub/GitLab</span><span class="tag">Jira</span><span class="tag">Jupyter</span><span class="tag">Google Colab</span><span class="tag">MATLAB</span><span class="tag">VS Code</span></div></article>
+  </div>
+</section>
+
+<section class="wrap" id="projects">
+  <div class="section-head"><div><div class="kicker">03 / Selected projects</div><h2>Ideas into working concepts.</h2></div></div>
+  <div class="grid3">
+    <article class="card project"><div class="project-art">Healthcare · ML · IoT</div><div class="project-body"><h3>Smart MediMate</h3><p>A machine-learning-powered medication reminder system integrating IoT devices for real-time notifications and scheduling. A Telegram bot sends personalised reminders to support medication adherence.</p><div class="tags"><span class="tag">Machine Learning</span><span class="tag">IoT</span><span class="tag">Telegram Bot</span></div></div></article>
+    <article class="card project"><div class="project-art">Blockchain · Platform</div><div class="project-body"><h3>Blockchain-based Crowdfunding</h3><p>A blockchain-based crowdfunding platform referenced in my academic profile. Add the project’s specific features, your contribution, technology stack and repository/demo link here.</p><div class="tags"><span class="tag">Blockchain</span><span class="tag">Crowdfunding</span></div></div></article>
+    <article class="card project"><div class="project-art">Research · Deep Learning</div><div class="project-body"><h3>Deep Learning & Cyber Attack Detection</h3><p>Research internship work exploring watermarking enhanced with deep learning techniques and cyber-attack detection using machine learning techniques.</p><div class="tags"><span class="tag">Deep Learning</span><span class="tag">Machine Learning</span><span class="tag">Research</span></div></div></article>
+  </div>
+</section>
+
+<section class="wrap" id="experience">
+  <div class="section-head"><div><div class="kicker">04 / Professional journey</div><h2>Experience</h2></div></div>
+  <div class="card"><div class="timeline">
+    <article class="role"><small>AUG 2024 — JUL 2025 · RESEARCH</small><h3>Research Intern · SRM University</h3><p>Worked on deep-learning-enhanced watermarking and machine-learning techniques for cyber-attack detection.</p></article>
+    <article class="role"><small>APR 2023 — JAN 2024 · WEB DEVELOPMENT</small><h3>Web Developer Intern · Sky Developers Software, Bangalore</h3><p>Developed responsive web applications using HTML5, CSS3, JavaScript and React. Collaborated on Node.js/Express backend functionality and REST APIs, integrated third-party APIs, and worked with a five-person team using Git and Agile practices. CV-reported outcomes include 15% improved user experience/engagement, 20% reduced load times, 30% faster data retrieval, and 25% improved site speed.</p></article>
+    <article class="role"><small>MAR 2023 — MAR 2025 · ADMINISTRATION & TECHNICAL</small><h3>Vascan Solutions Pvt Ltd</h3><p>CV describes a two-year Administrative Assistant tenure supporting administrative operations and using data analysis, Python and Java; it also notes technical-intern responsibilities involving technical guidance and problem-solving.</p></article>
+    <article class="role"><small>JUN 2023 — SEP 2023 · DATA ANALYTICS</small><h3>Data Analyst · APSSDC</h3><p>Gained hands-on experience analysing, visualising and handling complex datasets using Python libraries.</p></article>
+  </div></div>
+</section>
+
+<section class="wrap" id="education">
+  <div class="section-head"><div><div class="kicker">05 / Academic background</div><h2>Education</h2></div></div>
+  <div class="education">
+    <article class="card"><div class="edu-date">SEP 2025 — EXPECTED MAY 2027</div><h3>MSc Artificial Intelligence Systems with Industrial Placement</h3><p class="muted">University of East London</p><p class="muted">Relevant modules: Artificial Intelligence, Big Data Analytics, Machine Learning on Big Data and Intelligent Systems.</p></article>
+    <article class="card"><div class="edu-date">AUG 2021 — MAY 2025</div><h3>Bachelor’s in Computer Science and Engineering</h3><p class="muted">SRM University, Guntur · Distinction · 7.96 CGPA</p><p class="muted">Relevant modules: Python Programming, Web Technologies, Artificial Intelligence, Probability and Statistics, Database Management Systems, Data Warehousing and Data Mining.</p></article>
+  </div>
+</section>
+
+<section class="wrap" id="contact">
+  <div class="contact"><div><div class="kicker">06 / Get in touch</div><h2>Let’s connect and<br>build something useful.</h2><p>Open to conversations about AI, machine learning, research and software opportunities.</p></div><a class="button" href="mailto:kodurusai32@gmail.com">kodurusai32@gmail.com ↗</a></div>
+  <div class="social"><a href="https://www.linkedin.com/in/saikoduru64/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/kodurusai32" target="_blank" rel="noreferrer">GitHub ↗</a><a href="tel:+447352683480">+44 (0) 7352 683480</a></div>
+</section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> Yogananda Sai Koduru</span><span>Designed in a dark, modern style · AI & Software Portfolio</span></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
